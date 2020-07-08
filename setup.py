@@ -2,19 +2,17 @@ from setuptools import setup, find_packages
 import io
 import re
 
-longdesc = ''
 
 with io.open('README.md', 'rt', encoding='utf8') as f:
-    lines = f.readlines()
-    for line in lines:
-        if len(re.findall('align="*', line)) == 0:
-            longdesc += line
+    lines = f.read()
+    # longdesc = re.sub(r'\[<img(.+)https://github.com/zhouyuanzhen\)\n', '', lines)
+    longdesc = lines
 
 
 setup(
     name='zhouyuanzhen',
     license='Apache License 2.0',
-    version='0.1.0',
+    version='0.2.0',
     maintainer='Yuanzhen Zhou',
     maintainer_email='szrednick@gmail.com',
     packages=find_packages(include=['zyz', 'zyz.*']),

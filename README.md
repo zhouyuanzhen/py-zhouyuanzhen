@@ -8,16 +8,14 @@ PyPI for zhouyuanzhen
 
 ### Install Package
 
-```shell
-pip install zhouyuanzhen
-```
+    pip install zhouyuanzhen
+
 
 ### Play with it
 
-```python
-import zyz
+    import zyz
+    
+    zyz.sayhi()
 
-zyz.sayhi()
-```
 
 Enjoy it!
