@@ -10,7 +10,8 @@ with io.open('README.md', 'rt', encoding='utf8') as f:
 setup(
     name='zhouyuanzhen',
     license='Apache License 2.0',
-    version='0.2.2',
+    version='0.3.0',
+    keywords='zyz, zhouyuanzhen, development',
     maintainer='Yuanzhen Zhou',
     maintainer_email='szrednick@gmail.com',
     packages=find_packages(include=['zyz', 'zyz.*']),
@@ -21,6 +22,7 @@ setup(
     author_email='szrednick@gmail.com',
     description='A PyPI project of zhouyuanzhen',
     long_description=longdesc,
+    python_requires='>=3.5, <4',
     install_requires=[],
     extras_require={
         'test': [
