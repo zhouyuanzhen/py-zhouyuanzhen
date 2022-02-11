@@ -8,4 +8,4 @@ import datetime
 def sayhi():
 
     cyear = str(datetime.datetime.now().year)
-    print("Hello World " + cyear + "!")
+    print("Hello " + cyear + " from Yuanzhen!")
